@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const name = 'Ashwini Balnaves'
 const calendlyLink = 'https://calendly.com/coffee-with-ashwini/30min'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Ashwini Balnaves - portfolio'
 
 export default function Layout({ children, home }) {
   return (
@@ -15,7 +15,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="The personal website of Ashwini Balnaves"
         />
         <meta
           property="og:image"
