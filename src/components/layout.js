@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const name = 'Ashwini Balnaves'
+const calendlyLink = 'https://calendly.com/coffee-with-ashwini/30min'
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({ children, home }) {
@@ -37,6 +38,9 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <a href={calendlyLink}>
+                Have coffee with me!
+            </a>
           </>
         ) : (
           <>
@@ -46,8 +50,8 @@ export default function Layout({ children, home }) {
                   priority
                   src="/images/profilebig.jpg"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={100}
+                  width={100}
                   alt={name}
                 />
               </a>
