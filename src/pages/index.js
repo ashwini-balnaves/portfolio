@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 
+
+const calendlyLink = 'https://calendly.com/coffee-with-ashwini/30min'
+
+
 export default function Home() {
   return (
     <Layout home>
@@ -10,7 +14,7 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Ashwini is a full stack senior software engineer and team lead. She is currently working at Kapiche,
+          Ashwini is a full stack, senior software engineer and team lead. She is currently working at Kapiche,
           a startup that uses Natural Language Processing to make uncovering customer insights accessible at scale.
           She has also had experience in the network configuration domain and test automation. She also spends time
           mentoring coding boot camps and is a conference speaker.
@@ -21,6 +25,11 @@ export default function Home() {
           challenging. She loves to talk about the benefits of test automation, logs, monitoring and observability,
           and listening to other people’s passions.
         </p>
+      </section>
+      <section>
+        <a href={calendlyLink}>
+          Have coffee with me!
+        </a>
       </section>
     </Layout>
   )

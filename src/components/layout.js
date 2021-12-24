@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Ashwini Balnaves'
-const calendlyLink = 'https://calendly.com/coffee-with-ashwini/30min'
-export const siteTitle = 'Ashwini Balnaves - portfolio'
+const name = "Ashwini Balnaves";
+export const siteTitle = "Ashwini Balnaves - portfolio";
 
 export default function Layout({ children, home }) {
   return (
@@ -38,9 +37,7 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <a href={calendlyLink}>
-                Have coffee with me!
-            </a>
+            <a href={calendlyLink}>Have coffee with me!</a>
           </>
         ) : (
           <>
@@ -73,5 +70,5 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
 }
