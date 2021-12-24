@@ -5,7 +5,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "Ashwini Balnaves";
-export const siteTitle = "Ashwini Balnaves - portfolio";
+export const siteTitle = "Ashwini Balnaves · portfolio";
 
 export default function Layout({ children, home }) {
   return (
@@ -37,7 +37,7 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <a href={calendlyLink}>Have coffee with me!</a>
+            <p className={utilStyles.subtitle}> Full stack software engineer &middot; Brisbane, QLD</p>
           </>
         ) : (
           <>

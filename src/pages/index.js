@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className={utilStyles.headingSm}>
         <p>
           Ashwini is a full stack, senior software engineer and team lead. She is currently working at Kapiche,
           a startup that uses Natural Language Processing to make uncovering customer insights accessible at scale.
