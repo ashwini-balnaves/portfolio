@@ -1,11 +1,18 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+
+import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
 
 const name = "Ashwini Balnaves";
 export const siteTitle = "Ashwini Balnaves · portfolio";
+const linkedInUrl = "https://www.linkedin.com/in/ashwini-balnaves/";
+const githubUrl = "https://github.com/ashwini-balnaves/";
+const twitterUrl = "https://twitter.com/that_ashwini";
 
 export default function Layout({ children, home }) {
   return (
@@ -69,6 +76,20 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <footer className={styles.footer}>
+
+        <a href={`${linkedInUrl}`} target="_blank">
+          <FontAwesomeIcon icon={faLinkedin}
+            className={`${styles.fa} ${styles.faLinkedin}`}
+          />
+        </a>
+        <a href={`${githubUrl}`} target="_blank">
+          <FontAwesomeIcon icon={faGithub} className={`${styles.fa} ${styles.faGithub}`} />
+        </a>
+        <a href={`${twitterUrl}`} target="_blank">
+          <FontAwesomeIcon icon={faTwitter} className={`${styles.fa} ${styles.faTwitter}`} />
+        </a>
+      </footer>
     </div>
   );
 }
