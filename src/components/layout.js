@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <p className={utilStyles.subtitle}> Full stack software engineer &middot; Brisbane, QLD</p>
+            <p className={utilStyles.subtitle}> Senior, full stack software engineer &middot; Brisbane, QLD</p>
           </>
         ) : (
           <>
